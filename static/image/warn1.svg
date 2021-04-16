@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="58.9492271%" fx="50%" fy="58.9492271%" r="65.6061395%" gradientTransform="translate(0.500000,0.589492),scale(0.850000,1.000000),rotate(90.000000),translate(-0.500000,-0.589492)" id="radialGradient-1">
+            <stop stop-color="#FFE885" offset="0%"></stop>
+            <stop stop-color="#FFBD11" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="更改需求页面" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Ukey印章续期（NetCA）-更新证书" transform="translate(-483.000000, -184.000000)">
+            <g id="zhuyi" transform="translate(483.000000, 183.000000)">
+                <g id="Group-3" fill="url(#radialGradient-1)">
+                    <path d="M18.2515789,17 L1.74841214,17 C1.19612739,17 0.748412136,16.5522847 0.748412136,16 C0.748412136,15.821708 0.796079491,15.646658 0.886476794,15.4929818 L9.1380182,1.46529008 C9.41803663,0.989256336 10.030938,0.830354525 10.5069718,1.11037295 C10.6535256,1.19658066 10.7756783,1.31873278 10.8618866,1.46528625 L19.1135119,15.492978 C19.3935325,15.9690105 19.2346334,16.5819125 18.7586009,16.8619331 C18.6049238,16.9523318 18.4298724,17 18.2515789,17 Z" id="Fill-1"></path>
+                </g>
+                <polygon id="Fill-4" fill="#000000" points="9.5 11 9.03148335 5 11 5 10.5 11"></polygon>
+                <path d="M9,12.99995 C9,13.3572375 9.1905512,13.6873703 9.49996875,13.8660266 C9.80938629,14.0446578 10.1906137,14.0446578 10.4999312,13.8660266 C10.8093488,13.6873703 11,13.3572375 11,12.99995 C11,12.6426625 10.8093488,12.3125297 10.4999312,12.1339734 C10.1906137,11.9553422 9.80938629,11.9553422 9.49996875,12.1339734 C9.1905512,12.3125297 9,12.6426625 9,12.99995 Z" id="Fill-5" fill="#000000"></path>
+            </g>
+        </g>
+    </g>
+</svg>

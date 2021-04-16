@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="145px" height="45px" viewBox="0 0 145 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>矩形</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFCD02" offset="0%"></stop>
+            <stop stop-color="#FFA212" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="1" y="0" width="143" height="40" rx="20"></rect>
+        <filter x="-2.4%" y="-6.2%" width="104.9%" height="125.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.88627451   0 0 0 0 0.384313725   0 0 0 0 0.0784313725  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="更改需求页面" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="xinshourenwu" transform="translate(-752.000000, -567.000000)">
+            <g id="编组-4" transform="translate(440.000000, 444.000000)">
+                <g id="编组-4备份" transform="translate(312.000000, 123.000000)">
+                    <g id="矩形">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    </g>
+                    <g id="编组-2" transform="translate(9.000000, 6.000000)" fill="#FFFCF4">
+                        <path d="M13.5657451,0.139684386 C10.0657451,-0.321854075 3.5,-0.173877004 0.0657450735,9.30679314 C-0.434254926,11.6781459 2.06574507,12.1396844 2.56574507,11.152947 C4.56574507,8.44737669 6,2.59535377 12.5657451,3.30679314 C15.0657451,3.83199208 15.5657451,0.664883325 13.5657451,0.139684386 Z" id="路径-35"></path>
+                        <ellipse id="椭圆形" cx="19" cy="1.84615385" rx="2" ry="1.84615385"></ellipse>
+                    </g>
+                    <g id="编组备份" transform="translate(110.000000, 7.000000)">
+                        <circle id="椭圆形" fill="#FFFFFF" cx="12" cy="12" r="12"></circle>
+                        <path d="M10.0001686,20 C9.76969901,20 9.53824172,19.9258324 9.34976883,19.7743075 C8.92983866,19.4373721 8.88101936,18.8454717 9.24137497,18.4522375 L14.6828344,12.49969 L9.24137499,6.54712541 C8.88101938,6.15389126 8.92985697,5.56197363 9.34976885,5.22505542 C9.76871129,4.88949195 10.4005637,4.93390678 10.7589622,5.32667793 L16.7590359,11.8894577 C17.0803214,12.2405749 17.0803214,12.758788 16.7590359,13.1099052 L10.7589622,19.672685 C10.5616912,19.8887743 10.2814146,20 10.0001686,20 Z" id="路径" fill="#EF7615" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>icon add</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="创建合同" transform="translate(-1380.000000, -285.000000)" fill="#C0CCDA">
+            <g id="Group-2" transform="translate(1380.000000, 285.000000)">
+                <path d="M13.75,13.75 L13.75,1.25086829 C13.75,0.56003281 14.304831,0 15,0 C15.6903559,0 16.25,0.559336524 16.25,1.25086829 L16.25,13.75 L28.7491317,13.75 C29.4399672,13.75 30,14.304831 30,15 C30,15.6903559 29.4406635,16.25 28.7491317,16.25 L16.25,16.25 L16.25,28.7491317 C16.25,29.4399672 15.695169,30 15,30 C14.3096441,30 13.75,29.4406635 13.75,28.7491317 L13.75,16.25 L1.25086829,16.25 C0.56003281,16.25 0,15.695169 0,15 C0,14.3096441 0.559336524,13.75 1.25086829,13.75 L13.75,13.75 Z" id="icon-add"></path>
+            </g>
+        </g>
+    </g>
+</svg>

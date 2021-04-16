@@ -1,0 +1,961 @@
+.contract_signature {
+    min-width: 1200px;
+    margin: auto;
+    height: 100%;
+
+    .header {
+        height: 50px;
+        line-height: 50px;
+        background-color: #fff;
+        box-shadow: 0 2px 3px 0 rgba(227, 237, 242, 0.5);
+        position: relative;
+        z-index: 110;
+
+        .logo {
+            float: right;
+            padding-right: 47px;
+            cursor: pointer;
+
+            img {
+                // height: 50px;
+                width: 100px;
+            }
+        }
+
+        .back {
+            padding-left: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            color: #626262;
+
+            .icon-back {
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                background-image: url("../../../../static/image/back.svg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                margin-right: 6px;
+                position: relative;
+                top: 3px;
+            }
+
+            img {
+                height: 20px;
+                margin-right: 4px;
+                position: relative;
+                top: -1px;
+            }
+        }
+
+        .back:hover {
+            color: #30bcff;
+
+            .icon-back {
+                background-image: url("../../../../static/image/back_hover.svg");
+            }
+        }
+    }
+
+    .mian {
+        height: calc(100% - 52px);
+        overflow: hidden;
+        width: 100%;
+
+        .left {
+            width: 220px;
+            overflow-x: hidden;
+            overflow: auto;
+            height: calc(100% - 50px);
+            height: -moz-calc(100% - 50px);
+            height: -webkit-calc(100% - 50px);
+            background-color: #fff;
+            position: fixed;
+            float: left;
+            z-index: 100;
+
+            .select-signer {
+                background-color: #fff;
+                padding-bottom: 10px;
+            }
+
+            .line {
+                height: 10px;
+                background-color: #fafafa;
+            }
+
+            .title {
+                line-height: 22px;
+                text-align: center;
+                font-size: 16px;
+                color: #666;
+                margin-bottom: 14px;
+                padding-top: 14px;
+            }
+
+            .el-select {
+                margin-left: 10px;
+            }
+
+            .autograph {
+                position: relative;
+
+                .cover {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    z-index: 999;
+                }
+
+                li {
+                    width: 200px;
+                    height: 32px !important;
+                    background: #fafafa;
+                    border: 1px solid #fafafa;
+                    padding-bottom: 4px;
+                    margin-left: 10px;
+                    margin-top: 14px;
+                    font-size: 12px;
+                    color: #666666;
+                    position: relative;
+                    cursor: move;
+
+                    .img {
+                        margin-left: 5px;
+                        width: 30px;
+                        height: 21px;
+                        display: inline-block;
+                    }
+
+                    .img_autograph {
+                        background: url("../../../../static/image/autograph.svg")
+                            no-repeat center bottom;
+                        margin-top: 3px;
+                        background-size: 100% 100%;
+                    }
+
+                    .img_seal {
+                        background: url("../../../../static/image/seal.svg")
+                            no-repeat center bottom;
+                        margin-top: 3px;
+                        background-size: 100% 100%;
+                    }
+
+                    .name {
+                        display: inline-block;
+                        width: 101px;
+                        text-align: center;
+                        margin-left: 12px;
+                        position: relative;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        color: #30bcff;
+                    }
+
+                    .name_border {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        /*border-bottom: 1px solid #E2E2E2;*/
+                        bottom: -1px;
+                        width: 101px;
+                        right: 10px;
+                        z-index: 5;
+                    }
+
+                    span:nth-child(2) {
+                        padding-left: 9px;
+                        line-height: 30px;
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+
+                    span {
+                        display: inline-block;
+                    }
+                }
+
+                li:hover .name {
+                    color: #0073bd;
+                }
+
+                li:hover {
+                    border: 1px dashed #30bcff;
+                }
+
+                li:hover .name_border {
+                    border-bottom: 1px solid #30bcff;
+                }
+
+                li:hover .img_autograph {
+                    background: url("../../../../static/image/autograph_hover.svg")
+                        no-repeat center;
+                }
+
+                li:hover .img_seal {
+                    background: url("../../../../static/image/seal_hover.svg")
+                        no-repeat center;
+                }
+            }
+
+            .autograph_tab {
+                /*margin-top: 47px;*/
+                display: flex;
+                /*margin-bottom: 20px;*/
+                border-bottom: 1px solid #e2e2e2;
+
+                li {
+                    flex-grow: 1;
+                    text-align: center;
+                    height: 40px;
+                    line-height: 40px;
+                    cursor: pointer;
+                    margin-bottom: -1px;
+                }
+
+                li.active {
+                    border-bottom: 2px solid #30bcff;
+                    color: #30bcff;
+                }
+
+                li.guide-hover {
+                    background: #fff;
+                    z-index: 9999;
+                }
+            }
+
+            .ukey-box {
+                padding: 0 10px;
+                height: 152px;
+
+                .ukey-box-title {
+                    height: 24px;
+                    line-height: 24px;
+                    padding: 10px 0;
+                    box-sizing: content-box;
+                    font-size: 14px;
+                    color: #626262;
+
+                    .el-button.span {
+                        float: right;
+                        display: inline-block;
+                        font-size: 12px;
+                        color: #999999;
+                        width: 60px;
+                        height: 22px;
+                        line-height: 22px;
+                        border: 1px solid #c0ccda;
+                        border-radius: 4px;
+                        text-align: center;
+                        background-color: #fff;
+                        box-sizing: content-box;
+                        padding: 0;
+
+                        &:hover {
+                            border-color: #02adff;
+
+                            > span {
+                                color: #02adff;
+                            }
+                        }
+                    }
+                }
+
+                .ukey-box-content {
+                    &.none {
+                        background: #fafafa;
+                        height: 84px;
+                        line-height: 84px;
+                        font-size: 14px;
+                        color: #c0ccda;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .cloud-box-scrollbar {
+                height: calc(100% - 240px);
+                /*height: 358px;*/
+                min-height: 110px;
+                margin-bottom: 42px;
+            }
+
+            .cloud-box-title {
+                padding: 10px;
+                font-size: 14px;
+                color: #626262;
+            }
+
+            .cloud-box {
+                padding: 0 10px;
+            }
+
+            .autograph_box,
+            .seal_box {
+                padding-left: 6px;
+                padding-right: 6px;
+
+                .nodata {
+                    text-align: center;
+                    padding-top: 14px;
+                    font-size: 14px;
+                    color: #999999;
+                }
+
+                > li {
+                    margin-bottom: 16px;
+                    float: left;
+                    text-align: center;
+                    position: relative;
+                    cursor: pointer;
+
+                    > div {
+                        width: 84px;
+                        height: 78px;
+                        overflow: hidden;
+                        border: 1px solid #e2e2e2;
+                        border-radius: 4px;
+                        text-align: center;
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                            vertical-align: middle;
+                        }
+
+                        p {
+                            color: #999;
+                            font-size: 12px;
+                        }
+
+                        text-align: center;
+                    }
+                }
+
+                > li.autograph_list {
+                    > div {
+                        line-height: 78px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        padding: 10px;
+                    }
+
+                    > p {
+                        padding-top: 8px;
+                        color: #333;
+                        font-size: 12px;
+                        width: 86px;
+                        height: 24px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+
+                /*> li:last-child {
+                        width: 84px;
+                        height: 78px;
+                        border-radius: 4px;
+                        > div {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                        p {
+                            !*padding-bottom: 13px;*!
+                        }
+                        p:first-child {
+                            !*padding-top: 24px;*!
+                        }
+                    }*/
+                li:hover {
+                    border-color: #30bcff;
+                }
+
+                li:hover .el-icon-plus {
+                    color: #30bcff;
+                }
+
+                > li:nth-child(2n + 1) {
+                    margin-right: 10px;
+                }
+            }
+
+            .add_name {
+                background: #ffffff;
+                position: absolute;
+                bottom: 16px;
+                left: 16px;
+                width: 186px;
+                height: 36px;
+                border: 1px solid #c0ccda;
+                border-radius: 4px;
+                cursor: pointer;
+                color: #999999;
+                text-align: center;
+                font-size: 12px;
+                line-height: 34px;
+
+                /*margin: 15px auto 0;*/
+                p {
+                    font-size: 12px;
+                    color: #c0ccda;
+                    display: inline-block;
+                    padding: 0;
+                }
+
+                &:hover {
+                    border-color: #30bcff;
+                }
+            }
+
+            .add_name:hover p {
+                color: #30bcff;
+            }
+
+            .sign-time {
+                padding: 10px;
+                position: relative;
+                padding-top: 20px;
+                p {
+                    padding-bottom: 8px;
+                    span {
+                        display: inline-block;
+                        border: 1px solid #333;
+                        border-radius: 50%;
+                        font-size: 12px;
+                        width: 18px;
+                        height: 18px;
+                        text-align: center;
+                        cursor: pointer;
+                        position: relative;
+                        i {
+                            position: absolute;
+                            line-height: 24px;
+                            background: #888;
+                            width: 185px;
+                            color: #fff;
+                            left: -44px;
+                            top: -32px;
+                            display: none;
+                            &::after {
+                                content: "";
+                                width: 0;
+                                height: 0;
+                                border: 5px solid #888;
+                                border-right-color: transparent;
+                                border-left-color: transparent;
+                                border-bottom: 0;
+                                position: absolute;
+                                bottom: -5px;
+                                left: 47px;
+                            }
+                        }
+                        &:hover {
+                            & > i {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                #timeMask {
+                    width: 195px;
+                    line-height: 34px;
+                    border: 1px dashed #30bcff;
+                    text-align: center;
+                    color: #30bcff;
+                    // position: absolute;
+                    // left: 10px;
+                    // top: 36px;
+                    background: #fff;
+                    cursor: pointer;
+                    span {
+                        display: inline-block;
+                        position: relative;
+                        line-height: 1.2;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 2px;
+                            background: #30bcff;
+                            left: 0;
+                            bottom: -10px;
+                        }
+                    }
+                }
+            }
+
+            .wrapper--auth {
+                border: 1px soild #eee;
+                margin: 20px 0;
+                .auth-btn {
+                    text-align: center;
+                    margin: 20px 0;
+                }
+            }
+        }
+
+        .center {
+            height: 100%;
+            padding: 30px 0;
+            margin-left: 220px;
+            margin-right: 206px;
+            position: relative;
+
+            .guide-img1 {
+                position: absolute;
+                top: 238px;
+                left: -62px;
+                z-index: 9999;
+
+                .guide-know {
+                    position: absolute;
+                    width: 101px;
+                    height: 44px;
+                    left: 347px;
+                    bottom: 12px;
+                    cursor: pointer;
+                }
+
+                .guide-mysign {
+                    position: absolute;
+                    background: #fff;
+                    width: 90px;
+                    height: 30px;
+                    left: -41px;
+                    top: -35px;
+                    line-height: 30px;
+                    text-align: center;
+                    border-radius: 6px;
+                }
+
+                .guide-read {
+                    position: absolute;
+                    left: -9px;
+                    top: 11px;
+                    width: 60px;
+                    height: 22px;
+                    line-height: 22px;
+                    background: #fff;
+                    text-align: center;
+                    border-radius: 6px;
+                    // color: #999999;
+                }
+
+                .guide-cloud {
+                    position: absolute;
+                    left: -152px;
+                    top: 161px;
+                    width: 50px;
+                    height: 22px;
+                    background: #fff;
+                    text-align: center;
+                    line-height: 22px;
+                    border-radius: 4px;
+                }
+            }
+
+            .guide-img2 {
+                position: absolute;
+                bottom: 138px;
+                right: -172px;
+                z-index: 9999;
+
+                .guide-know {
+                    position: absolute;
+                    width: 101px;
+                    height: 44px;
+                    left: 195px;
+                    bottom: 9px;
+                    cursor: pointer;
+                }
+
+                .guide-sign {
+                    position: absolute;
+                    bottom: -34px;
+                    right: 19px;
+                    width: 100px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    color: #fff;
+                    background: #4ca1f4;
+                    border-radius: 6px;
+                }
+            }
+
+            .doll {
+                position: absolute;
+                top: 135px;
+                left: 7px;
+                width: 52px;
+                height: 100px;
+                background: url("/static/image/doll.svg") no-repeat;
+                z-index: 10;
+
+                .cloud {
+                    width: 270px;
+                    height: 122px;
+                    background: url("/static/image/cloud.svg") no-repeat;
+                    position: absolute;
+                    top: -127px;
+                    left: 0;
+
+                    p {
+                        width: 80%;
+                        margin: 0 auto;
+                        margin-top: 30px;
+                    }
+                }
+            }
+
+            #scroll {
+                height: 100%;
+                max-height: 1000px;
+                z-index: 9;
+
+                .pagetext {
+                    width: 778px;
+                    margin: auto;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    padding-right: 20px;
+                    background-color: #fafafa;
+                    font-size: 12px;
+                    color: #999;
+                    text-align: right;
+                }
+            }
+
+            .dataMore {
+                text-align: center;
+            }
+
+            .img_box {
+                /*width: 595px;*/
+                max-width: 778px;
+                margin: auto;
+                position: relative;
+
+                > .list {
+                    /*width: 595px;*/
+                    /*height: 800px;*/
+
+                    width: 778px;
+                    height: 1236px;
+                    background-color: transparent;
+                    /*background-color: #fff;*/
+                    text-align: center;
+                    /*margin-bottom: 40px;*/
+                    border: none;
+
+                    img {
+                        /*width: 595px;*/
+                        /*height: 842px;*/
+
+                        width: 778px;
+                        height: 1100px;
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+
+            .page {
+                padding-right: 20px;
+                padding-top: 11px;
+                text-align: right;
+                font-size: 14px;
+                color: #999999;
+                position: fixed;
+                top: 45px;
+                right: 222px;
+            }
+
+            .goto-wrapper {
+                width: 30px;
+                position: fixed;
+                right: 280px;
+                top: 50%;
+                /*right: 280px;*/
+                right: 240px;
+                margin-top: -245px;
+
+                li {
+                    padding: 15px 8px;
+                    height: 110px;
+                    width: 32px;
+                    border: 1px solid #e2e2e2;
+                    border-radius: 4px;
+                    margin-bottom: 20px;
+                    cursor: pointer;
+                    font-size: 14px;
+                    color: #626262;
+                    background-color: #fff;
+
+                    > a {
+                        width: 24px;
+                        height: 24px;
+                        display: inline-block;
+                    }
+                }
+
+                .prev {
+                    margin-top: 40px;
+                }
+
+                .prev a {
+                    background: url("../../../../static/image/prev.svg") center
+                        no-repeat;
+                }
+
+                .prev:hover a {
+                    background: url("../../../../static/image/prev_hover.svg")
+                        center no-repeat;
+                }
+
+                .prev_last a {
+                    background: url("../../../../static/image/prev_last.svg")
+                        center no-repeat;
+                }
+
+                .prev,
+                .next {
+                    text-align: center;
+                    height: 24px;
+                    background: none;
+                    border: none;
+                    padding: 0;
+                }
+
+                .next a {
+                    background: url("../../../../static/image/page_next.svg")
+                        center no-repeat;
+                }
+
+                .next:hover a {
+                    background: url("../../../../static/image/page_next_hover.svg")
+                        center no-repeat;
+                }
+
+                .next_last a {
+                    background: url("../../../../static/image/page_next_last.svg")
+                        center no-repeat;
+                }
+
+                .first_page a {
+                    background: url("../../../../static/image/first_page.svg")
+                        center no-repeat;
+                }
+
+                .first_page:hover a {
+                    background: url("../../../../static/image/first_page_hover.svg")
+                        center no-repeat;
+                }
+
+                .first_page_last a {
+                    background: url("../../../../static/image/first_page_last.svg")
+                        center no-repeat;
+                }
+
+                .last_page a {
+                    background: url("../../../../static/image/last_page.svg")
+                        center no-repeat;
+                }
+
+                .last_page:hover a {
+                    background: url("../../../../static/image/last_page_hover.svg")
+                        center no-repeat;
+                }
+
+                .last_page_last a {
+                    background: url("../../../../static/image/last_page_last.svg")
+                        center no-repeat;
+                }
+
+                .type:hover {
+                    background: #02adff;
+                    color: #fff;
+                }
+
+                .current {
+                    background: #02adff;
+                    color: #fff;
+                }
+            }
+        }
+
+        .right {
+            width: 206px;
+            height: calc(100% - 50px);
+            height: -moz-calc(100% - 50px);
+            height: -webkit-calc(100% - 50px);
+            background-color: #fff;
+            position: fixed;
+            z-index: 100;
+            float: right;
+            right: 0;
+            top: 50px;
+
+            .el-scrollbar {
+                border-bottom: 1px solid #e2e2e2;
+                border-top: 1px solid #e2e2e2;
+            }
+
+            .title {
+                height: 36px;
+                line-height: 36px;
+                font-size: 14px;
+                color: #999999;
+                text-align: center;
+            }
+
+            .contract_list {
+                padding-top: 10px;
+                /*height: 460px;*/
+                height: calc(100% - 250px);
+
+                li {
+                    padding-bottom: 20px;
+                    cursor: pointer;
+
+                    .img_box {
+                        margin: auto;
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 4px;
+                        /*border: 1px solid #E2E2E2;*/
+                        overflow: hidden;
+                        position: relative;
+                        text-align: center;
+
+                        > img {
+                            height: 115px;
+                            width: auto;
+                        }
+
+                        .autograph_tip {
+                            position: absolute;
+                            right: -12px;
+                            top: 5px;
+                            display: block;
+                            width: 12px;
+                            height: 6px;
+                            background: #e3c273;
+                            border-radius: 0 10px 10px 0;
+                        }
+
+                        .sign_tip {
+                            position: absolute;
+                            right: -12px;
+                            top: 16px;
+                            display: block;
+                            width: 12px;
+                            height: 6px;
+                            background: #89b1ec;
+                            border-radius: 0 10px 10px 0;
+                        }
+                    }
+
+                    /*.img_box.active {*/
+                    /*border: 1px solid #E3EDF1;*/
+                    /*box-shadow: 0 2px 3px 0 rgba(146, 213, 244, 0.50);*/
+                    /*}*/
+                    .box-show {
+                        width: 120px;
+                        height: 120px;
+                        margin: auto;
+                        border-radius: 4px;
+                        border: 1px solid #e2e2e2;
+                        margin-bottom: 10px;
+                    }
+
+                    .label {
+                        position: absolute;
+                        left: -14px;
+                        top: -4px;
+                        width: 44px;
+                        height: 24px;
+                        background: #eff2f7;
+                        text-align: center;
+                        transform: rotate(-45deg);
+                        font-size: 12px;
+
+                        i {
+                            margin-left: -1px;
+                            margin-top: 9px;
+                            transform: scale(0.83);
+                            -ms-transform: scale(0.83);
+                            -moz-transform: scale(0.83);
+                            -webkit-transform: scale(0.83);
+                            -o-transform: scale(0.83);
+                            color: #02adff;
+                        }
+                    }
+
+                    p {
+                        font-size: 14px;
+                        color: #333333;
+                        text-align: center;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                }
+
+                li.active .box-show {
+                    border: 1px solid #e3edf1;
+                    box-shadow: 0 2px 3px 0 rgba(146, 213, 244, 0.5);
+                }
+
+                li.active p {
+                    color: #30bcff;
+                }
+
+                li:hover .box-show {
+                    border: 1px solid #02adff;
+                    box-shadow: none;
+                    /*box-shadow: 0 2px 3px 0 rgba(146, 213, 244, 0.5);*/
+                }
+
+                li:hover p {
+                    color: #30bcff;
+                }
+            }
+
+            button {
+                display: block;
+                width: 178px;
+                height: 36px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+            }
+
+            .el-button--default {
+                color: #999999;
+            }
+        }
+    }
+}
+
+/*@media screen and (max-width: 1550px) {*/
+/*.contract_signature .mian .center .img_box {*/
+/*margin-left: 5%;*/
+/*}*/
+/*.contract_signature .mian .center .goto-wrapper {*/
+/*left: 80%;*/
+/*}*/
+/*}*/
+
+@media screen and (max-width: 1366px) {
+    .contract_signature .mian .center .goto-wrapper {
+        position: absolute;
+        top: 300px;
+        right: 6px;
+    }
+}

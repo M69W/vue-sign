@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="219px" height="120px" viewBox="0 0 219 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>折扣券</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="53.7489744%" y1="0%" x2="53.7489744%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0B69FE" offset="0%"></stop>
+            <stop stop-color="#434DFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="卡券页面" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="我的优惠券1" transform="translate(-835.000000, -227.000000)" fill="url(#linearGradient-1)">
+            <g id="编组-2" transform="translate(835.000000, 227.000000)">
+                <path d="M219,0 L219,120 L0,120 L0,0 L96.0081663,-3.28757634e-05 C96.2625845,7.90840157 102.429576,14.2372881 110,14.2372881 C117.570424,14.2372881 123.737416,7.90840157 123.991834,-3.28757634e-05 L219,0 Z" id="形状结合"></path>
+            </g>
+        </g>
+    </g>
+</svg>
